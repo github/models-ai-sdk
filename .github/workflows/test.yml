@@ -1,0 +1,40 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: 'Test Node.js (v${{ matrix.node-version }})'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
+      - run: npm publish --dry-run
+
+  # All "needs" jobs will need to succeed for a pull request to be merged.
+  results:
+    if: always()
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+      - name: Check Results
+        run: |
+          outcome='${{ toJSON(needs.*.result) }}'
+          if [[ $(echo $outcome | jq -e 'all(. == "success")') != "true" ]]; then
+            echo "Some required steps failed!";
+            exit 1;
+          fi

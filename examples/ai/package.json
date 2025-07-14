@@ -1,0 +1,14 @@
+{
+  "name": "examples_ai",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "ai": "beta",
+    "dotenv": "^17",
+    "@github/models": "file:../../"
+  }
+}
