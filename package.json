@@ -1,0 +1,65 @@
+{
+  "name": "@github/models",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "type": "module",
+  "files": [
+    "dist",
+    "license.txt",
+    "readme.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint --cache .",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/models-ai-sdk.git"
+  },
+  "prettier": "@github/prettier-config",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github/models-ai-sdk/issues"
+  },
+  "homepage": "https://github.com/github/models-ai-sdk#readme",
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "beta",
+    "@ai-sdk/provider": "beta",
+    "@ai-sdk/provider-utils": "beta"
+  },
+  "devDependencies": {
+    "@github/prettier-config": "0.0.6",
+    "@types/node": "^24",
+    "eslint": "^9",
+    "eslint-plugin-github": "^6",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "prettier": "^3",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.2",
+    "vitest": "^3",
+    "dotenv": "^17.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "ai"
+  ]
+}
