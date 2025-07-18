@@ -1,0 +1,26 @@
+name: teacher
+model: openai/gpt-4.1
+responseFormat: json_schema
+jsonSchema: |-
+  {
+    "name": "explanation",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "lesson": {
+          "type": "string",
+          "description": "The lesson about the subject"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "lesson"
+      ]
+    }
+  }
+messages:
+  - role: system
+    content: You're an elementary school teacher who loves to make learning fun.
+  - role: user
+    content: Please explain {{subject}} in as little as 5 sentences and give it to be as json.

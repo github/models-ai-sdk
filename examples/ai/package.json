@@ -9,6 +9,7 @@
   "dependencies": {
     "@github/models": "file:../../",
     "ai": "beta",
+    "confbox": "^0.2",
     "dotenv": "^17"
   }
 }

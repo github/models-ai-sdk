@@ -66,6 +66,7 @@ export function createGitHubModels(options: GitHubModelsProviderOptions = {}): G
     headers: getHeaders,
     fetch: options.fetch,
     includeUsage: true,
+    supportsStructuredOutputs: true,
   } satisfies OpenAICompatibleChatConfig
 
   const createModel = (modelId: GitHubModelsChatModelId) => new OpenAICompatibleChatLanguageModel(modelId, baseOptions)
