@@ -50,7 +50,7 @@
     "prettier": "^3",
     "tsup": "^8.3.0",
     "typescript": "^5.9.3",
-    "vitest": "^3",
+    "vitest": "^4",
     "dotenv": "^17.2.3"
   },
   "engines": {
