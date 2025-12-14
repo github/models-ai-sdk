@@ -37,21 +37,22 @@
   },
   "homepage": "https://github.com/github/models-ai-sdk#readme",
   "dependencies": {
-    "@ai-sdk/openai-compatible": "beta",
-    "@ai-sdk/provider": "beta",
-    "@ai-sdk/provider-utils": "beta"
+    "@ai-sdk/openai-compatible": "^1.0.29",
+    "@ai-sdk/provider": "^2.0.0",
+    "@ai-sdk/provider-utils": "^3.0.19",
+    "ai": "^5.0.113"
   },
   "devDependencies": {
     "@github/prettier-config": "0.0.6",
-    "@types/node": "^24",
-    "eslint": "^9",
-    "eslint-plugin-github": "^6",
+    "@types/node": "^25.0.2",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.39.2",
+    "eslint-plugin-github": "^6.0.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "prettier": "^3",
-    "tsup": "^8.3.0",
+    "prettier": "^3.7.4",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "vitest": "^3",
-    "dotenv": "^17.2.3"
+    "vitest": "^4.0.15"
   },
   "engines": {
     "node": ">=20"
