@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@github/models": "file:../../",
-    "ai": "^5.0.68",
-    "dotenv": "^17"
+    "ai": "^5.0.113",
+    "dotenv": "^17.2.3"
   }
 }

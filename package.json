@@ -1,6 +1,6 @@
 {
-  "name": "@github/models",
-  "version": "0.0.0",
+  "name": "@cianfrani/github",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "type": "module",
@@ -28,31 +28,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github/models-ai-sdk.git"
+    "url": "git+https://github.com/markacianfrani/models-ai-sdk.git"
   },
   "prettier": "@github/prettier-config",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/github/models-ai-sdk/issues"
+    "url": "https://github.com/markacianfrani/models-ai-sdk/issues"
   },
-  "homepage": "https://github.com/github/models-ai-sdk#readme",
+  "homepage": "https://github.com/markacianfrani/models-ai-sdk#readme",
   "dependencies": {
-    "@ai-sdk/openai-compatible": "^1.0.21",
+    "@ai-sdk/openai-compatible": "^1.0.29",
     "@ai-sdk/provider": "^2.0.0",
-    "@ai-sdk/provider-utils": "^3.0.12",
-    "ai": "^5.0.68"
+    "@ai-sdk/provider-utils": "^3.0.19",
+    "ai": "^5.0.113"
   },
   "devDependencies": {
     "@github/prettier-config": "0.0.6",
-    "@types/node": "^24",
+    "@types/node": "^25.0.2",
     "dotenv": "^17.2.3",
-    "eslint": "^9",
+    "eslint": "^9.39.2",
     "eslint-plugin-github": "^6",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "prettier": "^3",
-    "tsup": "^8.3.0",
+    "prettier": "^3.7.4",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "vitest": "^3"
+    "vitest": "^4.0.15"
   },
   "engines": {
     "node": ">=20"

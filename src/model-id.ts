@@ -23,11 +23,9 @@ export type GitHubModelsChatModelId =
   | 'openai/o3-mini'
   | 'openai/o4-mini'
   | 'ai21-labs/ai21-jamba-1.5-large'
-  | 'ai21-labs/ai21-jamba-1.5-mini'
   | 'cohere/cohere-command-a'
   | 'cohere/cohere-command-r-08-2024'
   | 'cohere/cohere-command-r-plus-08-2024'
-  | 'core42/jais-30b-chat'
   | 'deepseek/deepseek-r1'
   | 'deepseek/deepseek-r1-0528'
   | 'deepseek/deepseek-v3-0324'
@@ -40,9 +38,7 @@ export type GitHubModelsChatModelId =
   | 'meta/meta-llama-3.1-8b-instruct'
   | 'mistral-ai/codestral-2501'
   | 'mistral-ai/ministral-3b'
-  | 'mistral-ai/mistral-large-2411'
   | 'mistral-ai/mistral-medium-2505'
-  | 'mistral-ai/mistral-nemo'
   | 'mistral-ai/mistral-small-2503'
   | 'xai/grok-3'
   | 'xai/grok-3-mini'
@@ -63,6 +59,4 @@ export type GitHubModelsChatModelId =
 export type GitHubModelsEmbeddingModelId =
   | 'openai/text-embedding-3-large'
   | 'openai/text-embedding-3-small'
-  | 'cohere/cohere-embed-v3-english'
-  | 'cohere/cohere-embed-v3-multilingual'
   | (string & {})
