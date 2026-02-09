@@ -43,15 +43,15 @@
   },
   "devDependencies": {
     "@github/prettier-config": "0.0.6",
-    "@types/node": "^24",
-    "eslint": "^9",
+    "@types/node": "^25",
+    "eslint": "^10",
     "eslint-plugin-github": "^6",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "prettier": "^3",
-    "tsup": "^8.3.0",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "vitest": "^3",
-    "dotenv": "^17.2.3"
+    "vitest": "^4",
+    "dotenv": "^17.2.4"
   },
   "engines": {
     "node": ">=20"
