@@ -30,6 +30,4 @@ jobs:
         env:
           TAG_NAME: ${{ github.event.release.tag_name || github.event.inputs.tag_name }}
       - run: npm run build
-      - run: npm whoami; npm --ignore-scripts publish --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - run: npm --ignore-scripts publish --provenance
